@@ -11,10 +11,19 @@ $(document).ready(function(){
   
     
     //$(".myArray").append(favThings);
+    favThings.push("gwen");
+    favThings[0] = "glen";
 
-    $("#output").text(favThings);
+    var newThings = [favThings[0], favThings[1], favThings[2]];
+    //$("#output").text(favThings);
 
-   // $("#yourArray").show();
+    $(".firstElement").append(newThings[0]);
+    $(".secondElement").append(newThings[1]);
+    $(".thirdElement").append(newThings[2]);
+    
+   // $("#output").text(newThings);
+
+    $("#yourArray").show();
  
   });
 });
